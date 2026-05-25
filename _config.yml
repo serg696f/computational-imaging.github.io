@@ -16,7 +16,7 @@ aux_links:
 
 aux_links_new_tab: true
 
-footer_content: "Computational Imaging Research &copy; 2025"
+footer_content: "Computational Imaging Research &copy; 2025 &nbsp;·&nbsp; <a href=\"https://computational-imaging.org\">computational-imaging.org</a>"
 
 plugins:
   - jekyll-remote-theme
