@@ -1,11 +1,11 @@
 ---
-layout: home
-title: Home
-nav_order: 1
+layout: default
+title: Repositories
+nav_order: 2
+has_children: true
 ---
-
-# Computational Imaging Code
-
+<img src="assets/images/coimg-logo-1-code-sml.png" alt="Computational Imaging" 
+     style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 6px; margin-bottom: 2rem;">    
 A curated collection of open-source code, tools, and repositories for computational imaging research — covering tomographic reconstruction, inverse problems, and imaging systems.
 
 ---
