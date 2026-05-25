@@ -1,10 +1,3 @@
-# computational-imaging.github.io
-
-Website source for [code.computational-imaging.org](https://code.computational-imaging.org) — 
-a curated collection of code and repositories for computational imaging research.
-
----
-
 # Computational Imaging Code — Website Guide
 
 This document explains how the `code.computational-imaging.org` website works and how to add new projects to it.
@@ -13,18 +6,18 @@ This document explains how the `code.computational-imaging.org` website works an
 
 ## Table of Contents
 
-1. [Website Overview](#website-overview)
-2. [Site Structure](#site-structure)
-3. [How to Add a New Project](#how-to-add-a-new-project)
-4. [How to Edit an Existing Project](#how-to-edit-an-existing-project)
-5. [How to Update the Home Page Project List](#how-to-update-the-home-page-project-list)
-6. [Search](#search)
-7. [How Changes Are Deployed](#how-changes-are-deployed)
-8. [File Reference](#file-reference)
+1. [Website Overview](#1-website-overview)
+2. [Site Structure](#2-site-structure)
+3. [How to Add a New Project](#3-how-to-add-a-new-project)
+4. [How to Edit an Existing Project](#4-how-to-edit-an-existing-project)
+5. [How to Update the Home Page Project List](#5-how-to-update-the-home-page-project-list)
+6. [Search](#6-search)
+7. [How Changes Are Deployed](#7-how-changes-are-deployed)
+8. [File Reference](#8-file-reference)
 
 ---
 
-## Website Overview
+## 1. Website Overview
 
 The site is a **Jekyll** static site hosted on **GitHub Pages** at `code.computational-imaging.org`. It uses the [Just the Docs](https://just-the-docs.com/) theme, which provides:
 
@@ -37,7 +30,7 @@ No coding or local setup is required to update the site — all edits can be mad
 
 ---
 
-## Site Structure
+## 2. Site Structure
 
 ```
 repo root/
@@ -58,7 +51,7 @@ Each `.md` file in `/repos/` becomes one page in the site. The filename becomes 
 
 ---
 
-## How to Add a New Project
+## 3. How to Add a New Project
 
 ### Step 1 — Create the project page
 
@@ -133,7 +126,7 @@ License name — see [LICENSE](https://github.com/username/reponame/blob/main/LI
 
 ### Step 2 — Update the home page table
 
-See [How to Update the Home Page Project List](#how-to-update-the-home-page-project-list) below.
+See [How to Update the Home Page Project List](#5-how-to-update-the-home-page-project-list) below.
 
 ### Step 3 — Set the nav_order
 
@@ -141,7 +134,7 @@ The `nav_order` value in the front matter controls the order projects appear in 
 
 ---
 
-## How to Edit an Existing Project
+## 4. How to Edit an Existing Project
 
 1. Go to the repository on GitHub → click the `repos/` folder
 2. Click the `.md` file you want to edit (e.g. `mbirjax.md`)
@@ -153,7 +146,7 @@ The site will rebuild and the changes will be live within about 1 minute.
 
 ---
 
-## How to Update the Home Page Project List
+## 5. How to Update the Home Page Project List
 
 The home page (`index.md`) contains a Markdown table listing all projects. To add a row:
 
@@ -177,7 +170,7 @@ The home page (`index.md`) contains a Markdown table listing all projects. To ad
 
 ---
 
-## Search
+## 6. Search
 
 Search is built into the Just the Docs theme and requires **no configuration**. It automatically indexes every page on the site, including all headings and body text.
 
@@ -187,7 +180,7 @@ To make a project more searchable, use descriptive headings and include relevant
 
 ---
 
-## How Changes Are Deployed
+## 7. How Changes Are Deployed
 
 Every time a change is committed to the `main` branch, GitHub automatically:
 
@@ -201,7 +194,7 @@ If the Actions tab shows a red ✗, click the failed run to see the error log. T
 
 ---
 
-## File Reference
+## 8. File Reference
 
 | File | Purpose | Edit? |
 |---|---|---|
