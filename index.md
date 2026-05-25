@@ -9,7 +9,7 @@ A curated collection of open-source code, tools, and repositories for computatio
 
 ---
 
-## All Projects
+## All Computational Imaging Projects
 
 | Project | Description | Language | License |
 |---|---|---|---|
