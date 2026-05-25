@@ -23,6 +23,7 @@ footer_content: "Computational Imaging Research &copy; 2025 &nbsp;·&nbsp; <a hr
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
+  - jekyll-include-cache
 
 nav_sort: case_insensitive
 
