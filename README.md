@@ -6,18 +6,19 @@ This document explains how the `code.computational-imaging.org` website works an
 
 ## Table of Contents
 
-1. [Website Overview](#1-website-overview)
-2. [Site Structure](#2-site-structure)
-3. [How to Add a New Project](#3-how-to-add-a-new-project)
-4. [How to Edit an Existing Project](#4-how-to-edit-an-existing-project)
-5. [How to Update the Home Page Project List](#5-how-to-update-the-home-page-project-list)
-6. [Search](#6-search)
-7. [How Changes Are Deployed](#7-how-changes-are-deployed)
-8. [File Reference](#8-file-reference)
+1. [Website Overview](#website-overview)
+2. [Site Structure](#site-structure)
+3. [How to Add a New Project](#how-to-add-a-new-project)
+4. [How to Edit an Existing Project](#how-to-edit-an-existing-project)
+5. [How to Update the Home Page Project List](#how-to-update-the-home-page-project-list)
+6. [Search](#search)
+7. [How Changes Are Deployed](#how-changes-are-deployed)
+8. [File Reference](#file-reference)
 
 ---
 
-## 1. Website Overview
+<a name="website-overview"></a>
+## Website Overview
 
 The site is a **Jekyll** static site hosted on **GitHub Pages** at `code.computational-imaging.org`. It uses the [Just the Docs](https://just-the-docs.com/) theme, which provides:
 
@@ -30,7 +31,8 @@ No coding or local setup is required to update the site — all edits can be mad
 
 ---
 
-## 2. Site Structure
+<a name="site-structure"></a>
+## Site Structure
 
 ```
 repo root/
@@ -51,7 +53,8 @@ Each `.md` file in `/repos/` becomes one page in the site. The filename becomes 
 
 ---
 
-## 3. How to Add a New Project
+<a name="how-to-add-a-new-project"></a>
+## How to Add a New Project
 
 ### Step 1 — Create the project page
 
@@ -101,19 +104,15 @@ Describe what the project does, what problem it solves, and who it is for.
 
 ## Installation
 
-```bash
 pip install yourpackage
-```
 
 ---
 
 ## Quick Start
 
-```python
 import yourpackage
 
 # Example usage here
-```
 
 ---
 
@@ -126,7 +125,7 @@ License name — see [LICENSE](https://github.com/username/reponame/blob/main/LI
 
 ### Step 2 — Update the home page table
 
-See [How to Update the Home Page Project List](#5-how-to-update-the-home-page-project-list) below.
+See [How to Update the Home Page Project List](#how-to-update-the-home-page-project-list) below.
 
 ### Step 3 — Set the nav_order
 
@@ -134,7 +133,8 @@ The `nav_order` value in the front matter controls the order projects appear in 
 
 ---
 
-## 4. How to Edit an Existing Project
+<a name="how-to-edit-an-existing-project"></a>
+## How to Edit an Existing Project
 
 1. Go to the repository on GitHub → click the `repos/` folder
 2. Click the `.md` file you want to edit (e.g. `mbirjax.md`)
@@ -146,7 +146,8 @@ The site will rebuild and the changes will be live within about 1 minute.
 
 ---
 
-## 5. How to Update the Home Page Project List
+<a name="how-to-update-the-home-page-project-list"></a>
+## How to Update the Home Page Project List
 
 The home page (`index.md`) contains a Markdown table listing all projects. To add a row:
 
@@ -154,7 +155,7 @@ The home page (`index.md`) contains a Markdown table listing all projects. To ad
 2. Click the **pencil icon**
 3. Find the table that looks like this:
 
-```markdown
+```
 | Project | Description | Language | License |
 |---|---|---|---|
 | [MBIRJAX](repos/mbirjax) | Model-Based Iterative Reconstruction using JAX | Python | BSD-3 |
@@ -162,7 +163,7 @@ The home page (`index.md`) contains a Markdown table listing all projects. To ad
 
 4. Add a new row for your project:
 
-```markdown
+```
 | [Your Project](repos/yourprojectname) | Short description | Python | MIT |
 ```
 
@@ -170,7 +171,8 @@ The home page (`index.md`) contains a Markdown table listing all projects. To ad
 
 ---
 
-## 6. Search
+<a name="search"></a>
+## Search
 
 Search is built into the Just the Docs theme and requires **no configuration**. It automatically indexes every page on the site, including all headings and body text.
 
@@ -180,7 +182,8 @@ To make a project more searchable, use descriptive headings and include relevant
 
 ---
 
-## 7. How Changes Are Deployed
+<a name="how-changes-are-deployed"></a>
+## How Changes Are Deployed
 
 Every time a change is committed to the `main` branch, GitHub automatically:
 
@@ -194,7 +197,8 @@ If the Actions tab shows a red ✗, click the failed run to see the error log. T
 
 ---
 
-## 8. File Reference
+<a name="file-reference"></a>
+## File Reference
 
 | File | Purpose | Edit? |
 |---|---|---|
