@@ -85,6 +85,7 @@ This script is written for use with the [MBIRJAX](repos/mbirjax) software packag
 
 If you use this dataset in your research, please cite:
 
+{% raw %}
 ```bibtex
 @misc{rp2040_pcb_cbct_dataset,
   author = {Li, Ziyun and Yang, Mingqi and Sharma, Vijay Kumar and
@@ -96,3 +97,4 @@ If you use this dataset in your research, please cite:
   howpublished = {\url{https://www.datadepot.rcac.purdue.edu/bouman/elec_board}}
 }
 ```
+{% endraw %}
