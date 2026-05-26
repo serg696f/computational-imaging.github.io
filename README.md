@@ -65,18 +65,23 @@ Each `.md` file in `/repos/` becomes one page in the site. The filename becomes 
 5. nav_order is the last project + 1 and determines the order in the project list
 
 {: .fs-6 .fw-300 }
+
 .fs-6 — font size, scale 1–10 where 1 is smallest. fs-6 is roughly 1.1rem — slightly larger than body text
+
 .fw-300 — font weight 300, which is "light" (normal is 400, bold is 700)
 
 Together they produce a large, light-weight subtitle line — the elegant subheading style you see under the project title on each page.
 
 {: .no_toc .text-delta }
+
 .no_toc — excludes this heading from the auto-generated table of contents. Without it, "Table of Contents" would appear as an entry inside its own list, which would be circular and redundant
+
 .text-delta — applies a small, uppercase, letter-spaced label style — making it look like a section label rather than a full h2 heading
 
 The two always appear together on TOC headings because:
 
 .no_toc handles the logic (don't list this heading)
+
 .text-delta handles the appearance (make it look like a label)
 
 Without them, the heading would appear as a large bold h2 and also list itself inside the TOC it introduces.
