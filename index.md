@@ -14,6 +14,7 @@ A curated collection of open-source code, tools, and repositories for computatio
 | Project | Description | Language | License |
 |---|---|---|---|
 | [MBIRJAX](repos/mbirjax) | Model-Based Iterative Reconstruction using JAX for tomographic data | Python | BSD-3 |
+| [CI Metrology Charts](repos/computational-imaging-metrology) | 3D objects for benchmarking CT/MRI imaging systems | STL/STP | MIT |
 
 ---
 
