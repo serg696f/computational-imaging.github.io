@@ -15,6 +15,7 @@ A curated collection of open-source code, tools, and repositories for computatio
 |---|---|---|---|
 | [MBIRJAX](repos/mbirjax) | Model-Based Iterative Reconstruction using JAX for tomographic data | Python | BSD-3 |
 | [CI Metrology Charts](repos/computational-imaging-metrology) | 3D objects for benchmarking CT/MRI imaging systems | STL/STP | MIT |
+| [RP2040-PCB-CBCT Dataset](repos/rp2040-pcb-cbct) | Cone-beam CT benchmark for beam-hardening correction and metal artifact reduction | CBCT Data | — |
 
 ---
 
