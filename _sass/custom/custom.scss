@@ -178,7 +178,15 @@ pre {
     color: #C5D0E0;
   }
 }
+// Fenced code block background
+div.highlighter-rouge,
+figure.highlight {
+  background-color: #EBF0F8 !important; // #1B3A6B !important;  // --primary dark blue, matches current setup
+}
 
+pre.highlight {
+  background-color: transparent !important;
+}
 // ── Callout / Note boxes ──
 .note, blockquote {
   background: var(--hero-tint);
