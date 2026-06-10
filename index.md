@@ -23,3 +23,8 @@ A curated collection of open-source code, tools, and repositories for computatio
 ## Getting Started
 
 Browse the projects above or use the **search bar** (top of page) to find specific algorithms, methods, or topics. Each project page includes installation instructions, usage examples, and links to full documentation.
+
+## To Contribute to Computational Imaging Code
+
+Have your work available in Github and contact us at: code@computational-imaging.org
+
