@@ -48,8 +48,10 @@ tbd
 
 ## Quick Start / Documentation
 
-- For C-code  - see https://github.com/serg696f/MBIR-RT/blob/main/Verification/readme.md
-- For Verilog - see https://github.com/serg696f/MBIR-RT/blob/main/RTL/readme.md
+- For C-code see [Verification readme](https://github.com/serg696f/MBIR-RT/blob/main/Verification/readme.md)
+- For Verilog see [RTL readme](https://github.com/serg696f/MBIR-RT/blob/main/RTL/readme.md)
+
+---
 
 # Example usage here
 
@@ -59,6 +61,4 @@ tbd
 
 ## License
 
-MIT
-
-License name — see [LICENSE](https://github.com/username/reponame/blob/main/LICENSE).
+MIT — see [LICENSE](https://github.com/serg696f/MBIR-RT/blob/main/LICENSE) on GitHub.
