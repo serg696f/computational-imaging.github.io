@@ -3,6 +3,7 @@ layout: default
 title: MBIR-RT
 parent: Repositories
 nav_order: 4
+permalink: /repos/MBIR-RT/
 ---
 
 # MBIR-RT
@@ -53,7 +54,7 @@ tbd
 
 ---
 
-# Example usage here
+## Example usage here
 
 tbd
 
