@@ -26,5 +26,5 @@ Browse the projects above or use the **search bar** (top of page) to find specif
 
 ## To Contribute to Computational Imaging Code
 
-Have your work available in Github and contact us at: code@computational-imaging.org
+Have your work available in Github and contact us at: [code@computational-imaging.org](mailto:code@computational-imaging.org)
 
