@@ -8,7 +8,7 @@ nav_order: 2
 # Computational Imaging Metrology Charts
 {: .no_toc }
 
-3D objects for benchmarking computational imaging systems such as CT and MRI — designed to measure frequency response and density linearity end-to-end.
+3D objects for benchmarking computational imaging systems such as CT and MRI — designed to measure frequency response and volume linearity end-to-end.
 {: .fs-6 .fw-300 }
 
 [View on GitHub](https://github.com/serg696f/Computational-Imaging-Metrology){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
@@ -31,18 +31,18 @@ Two charts are provided, each targeting a different measurement:
 
 | Chart | Purpose | File format |
 |---|---|---|
-| CI Density Chart | Measures density linearity vs position | `.stl`, `.stp` |
+| CI Density Chart | Measures volume linearity vs position | `.stl`, `.stp` |
 | CI Frequency Chart | Measures spatial frequency response | `.stl`, `.stp` |
 
 ---
 
-## CI Density Chart
+## CI Volume Chart
 
-The geometry of this chart is designed so that a reconstructed slice will have every point's relative density proportional to its distance from the centre:
+The geometry of this chart is designed so that a reconstructed slice will have every point's relative thickness is proportional to its distance from the centre:
 
-- The chart height equals its radius, so finding the radius gives the density
-- The centre is 0% density for odd slices and 100% density for even slices
-- The edge is 100% density for odd slices and 0% density for even slices
+- The chart height equals its radius, so finding the radius gives the thickness
+- The centre has 0% depth for odd slices and 100% depth for even slices
+- The edge is 100% depth for odd slices and 0% depth for even slices
 
 {: .note }
 The chart must be aligned parallel to the slicing plane for accurate measurements.
