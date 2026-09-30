@@ -18,7 +18,7 @@ A curated collection of open-source code, tools, and repositories for computatio
 | [RP2040-PCB-CBCT Dataset](repos/rp2040-pcb-cbct) | Cone-beam CT benchmark for beam-hardening correction and metal artifact reduction | CBCT Data | — |
 | [MBIR-RT](repos/MBIR-RT) | Real-Time implementation for Model Based Iterative Reconstruction (MBIR) of images from tomographic data | C, Verilog | MIT |
 | [SCICO](repos/scic) | Scientific Computational Imaging COde | Python | BSD 3-Clause |
-
+| [MBIRTorch](repos/mbirTorch) | MBIRTorch: High-performance tomographic reconstruction implemented in PyTorch| Python | BSD-3 |
 ---
 
 ## Getting Started
