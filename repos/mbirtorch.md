@@ -113,4 +113,5 @@ If you use MBIRJAX in your research, please cite the relevant publications liste
 
 ## License
 
-TBD
+BSD 3-Clause License — see [LICENSE](https://github.com/cabouman/mbirjax/blob/main/LICENSE) on GitHub.
+
