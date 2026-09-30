@@ -3,6 +3,7 @@ layout: default
 title: Scientific Computational Imaging COde
 parent: Repositories
 nav_order: 5
+permalink: /repos/scico/
 ---
 
 # Scientific Computational Imaging COde
