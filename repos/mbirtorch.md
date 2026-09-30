@@ -89,6 +89,7 @@ recon, recon_dict = mbirtorch.recon_simple_parallel(sinogram, angles)
 
 Please use the following BibTeX citation when referencing this software.
 
+{% raw %}
 ```bibtex
 @misc{mbirtorch,
   title = {{MBIRTorch}: {H}igh-performance tomographic reconstruction using {PyTorch}},
@@ -98,6 +99,7 @@ Please use the following BibTeX citation when referencing this software.
   year = 2026
 }
 ```
+{% endraw %}
 
 GitHub's "Cite this repository" button on the repository page generates this
 citation from `CITATION.cff`.
