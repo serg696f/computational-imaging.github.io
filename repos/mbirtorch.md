@@ -28,6 +28,8 @@ MBIR reconstruction implemented in PyTorch.
 
 MBIRTorch: Model-Based Iterative Reconstruction (MBIR) for tomographic reconstruction using [PyTorch](https://pytorch.org/).
 
+--- 
+
 ### Key Features
 
 * Multiple geometries:  parallel beam, cone beam (including curved detector and helical), translation mode, and multi-axis parallel. 
@@ -38,6 +40,8 @@ MBIRTorch: Model-Based Iterative Reconstruction (MBIR) for tomographic reconstru
 * Informative demos and extensive documentation. 
 * Seamless operation on 1 or more GPUs, Mac MPS, or CPU. 
 * Compiled torch and Triton kernels for efficiency.
+
+--- 
 
 ### Supported Applications
 
