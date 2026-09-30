@@ -3,6 +3,7 @@ layout: default
 title: MBIRTorch
 parent: Repositories
 nav_order: 6
+permalink: /repos/mbirtorch/
 ---
 
 # MBIRTorch
@@ -105,3 +106,9 @@ mbirtorch is a PyTorch port of [MBIRJAX](https://github.com/cabouman/mbirjax);
 please also cite it when referencing the underlying methods.
 
 If you use MBIRJAX in your research, please cite the relevant publications listed in the [documentation](https://mbirjax.readthedocs.io).
+
+---
+
+## License
+
+TBD
