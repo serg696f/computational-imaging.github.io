@@ -5,7 +5,7 @@ parent: Repositories
 nav_order: 6
 ---
 
-# MBIRJAX
+# MBIRTorch
 {: .no_toc }
 
 MBIR reconstruction implemented in PyTorch.
