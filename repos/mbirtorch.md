@@ -2,7 +2,7 @@
 layout: default
 title: MBIRTorch
 parent: Repositories
-nav_order: 2
+nav_order: 6
 ---
 
 # MBIRJAX
