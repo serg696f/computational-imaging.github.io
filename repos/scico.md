@@ -43,9 +43,10 @@ The online documentation includes detailed [installation instructions.](https://
 
 ---
 
-## Quick Start
+## Quick Start / Documentation
 
 TBD
+[Documentation](https://scico.readthedocs.io/en/stable/){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
