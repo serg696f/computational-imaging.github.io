@@ -19,7 +19,7 @@ A curated collection of open-source code, tools, and repositories for computatio
 | [MBIR-RT](repos/MBIR-RT) | Real-Time implementation for Model Based Iterative Reconstruction (MBIR) | C, Verilog | MIT |
 | [SCICO](repos/scico) | Scientific Computational Imaging COde | Python | BSD 3-Clause |
 | [MBIRTorch](repos/mbirtorch) | High-performance tomographic reconstruction implemented in PyTorch | Python | BSD-3 |
-| [xptycho](xptycho) | Ptychographic reconstruction with PMACE in PyTorch | Python | BSD 3-Clause |
+| [xptycho](repos/xptycho) | Ptychographic reconstruction with PMACE in PyTorch | Python | BSD 3-Clause |
 
 ---
 
