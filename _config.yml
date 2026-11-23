@@ -34,3 +34,6 @@ callouts:
   warning:
     title: Warning
     color: yellow
+
+mermaid:
+  version: "9.1.3"
