@@ -46,7 +46,7 @@ hotel:
   check_out: "2027-02-24"
   cutoff_date: "2027-01-29"             # [contract] Sec 1.3 / 1.4
   block_code: "HOTEL_BLOCK_CODE_TBD"
-  booking_method: "HOTEL_BOOKING_METHOD_TBD"   # rooming list submitted by Purdue (contract 1.4) or individual booking with a code
+  booking_method: "HOTEL_BOOKING_METHOD_TBD"   # attendees book through a hotel reservation link (requested 2026-11-22); rooming list is the fallback
 
 deadlines:
   paper_submission: "PAPER_SUBMISSION_DEADLINE_TBD"
