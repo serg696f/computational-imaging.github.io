@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Attendee workflows
+title: CISym workflows
 nav_order: 2
 has_children: true
 permalink: /workflows/
 ---
 
-## Attendee workflows
+## CISym workflows
 
 One path per kind of participant. Each fact is entered once, in the earliest system that needs it, and reused after that.
 

@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Session chair guide
-nav_order: 3
+parent: CISym workflows
+nav_order: 4
 permalink: /chairs/session-chairs/
 ---
 

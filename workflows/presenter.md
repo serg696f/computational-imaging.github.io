@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Presenter path
-parent: Attendee workflows
+parent: CISym workflows
 nav_order: 2
 permalink: /workflows/presenter/
 ---
@@ -12,12 +12,6 @@ For authors of an accepted paper. Your author details are entered once in CMT. A
 
 {% assign c = site.data.cisym %}
 
-<style>
-.cisym-diagram{overflow-x:auto;background:#FAFAF8;border:1px solid #DDD6C8;border-radius:6px;padding:8px}
-.cisym-diagram div.highlighter-rouge,.cisym-diagram div.highlight,.cisym-diagram pre,.cisym-diagram .mermaid,.cisym-diagram code{background:#FAFAF8 !important;box-shadow:none !important;border:0 !important}
-.cisym-diagram,.cisym-diagram *{font-family:Arial,Helvetica,sans-serif !important}
-.cisym-diagram svg{max-width:none !important;height:auto}
-</style>
 <div class="cisym-diagram" markdown="1">
 
 ```mermaid
@@ -82,6 +76,7 @@ flowchart TD
 ```
 
 </div>
+<script src="{{ '/assets/js/cisym-diagram.js' | relative_url }}"></script>
 
 ## What you need and where it goes
 
