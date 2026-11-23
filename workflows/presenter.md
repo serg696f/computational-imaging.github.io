@@ -12,14 +12,22 @@ For authors of an accepted paper. Your author details are entered once in CMT. A
 
 {% assign c = site.data.cisym %}
 
+<style>
+.cisym-diagram{overflow-x:auto;background:#FAFAF8;border:1px solid #DDD6C8;border-radius:6px;padding:8px}
+.cisym-diagram div.highlighter-rouge,.cisym-diagram div.highlight,.cisym-diagram pre,.cisym-diagram .mermaid,.cisym-diagram code{background:#FAFAF8 !important;box-shadow:none !important;border:0 !important}
+.cisym-diagram svg{max-width:none !important;height:auto}
+</style>
+<div class="cisym-diagram" markdown="1">
+
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{"fontSize":"20px","fontFamily":"Space Grotesk, sans-serif"},"flowchart":{"useMaxWidth":false,"nodeSpacing":35,"rankSpacing":45,"padding":12}}}%%
 flowchart TD
   subgraph CMT["Microsoft CMT"]
-    P1["1. Create or sign in to a CMT account with the email you will also use to register"]
+    P1["1. Create or sign in to a CMT account<br/>with the email you will also use to<br/>register"]
     P2["2. Submit paper: title, abstract, authors with affiliation and email, keywords, paper file. Deadline: {{ c.deadlines.paper_submission }}"]
     P3["3. Wait for review. Decision date: {{ c.deadlines.decision_notification }}"]
     D1{"4. Accepted?"}
-    P4["Not accepted: process ends. You may still register as an attendee."]
+    P4["Not accepted: process ends. You may<br/>still register as an attendee."]
     P5["5. Note your paper ID"]
   end
   subgraph IEEE["IEEE camera-ready"]
@@ -37,7 +45,7 @@ flowchart TD
   end
   subgraph EVENT["At the event"]
     P10["11. Send final slides if asked. Program: {{ c.links.program }}"]
-    P11["13. Meet your session chair and the AV desk, then present"]
+    P11["13. Meet your session chair and the AV<br/>desk, then present"]
     P12["12. Check in and collect the printed badge"]
   end
   P1 --> P2 --> P3 --> D1
@@ -58,6 +66,8 @@ flowchart TD
   class F1,F2,P8 pay;
   class D1,D2 gate;
 ```
+
+</div>
 
 ## What you need and where it goes
 

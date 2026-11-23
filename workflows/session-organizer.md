@@ -12,27 +12,35 @@ For people who propose and chair a session. This is a recommended flow. How sess
 
 {% assign c = site.data.cisym %}
 
+<style>
+.cisym-diagram{overflow-x:auto;background:#FAFAF8;border:1px solid #DDD6C8;border-radius:6px;padding:8px}
+.cisym-diagram div.highlighter-rouge,.cisym-diagram div.highlight,.cisym-diagram pre,.cisym-diagram .mermaid,.cisym-diagram code{background:#FAFAF8 !important;box-shadow:none !important;border:0 !important}
+.cisym-diagram svg{max-width:none !important;height:auto}
+</style>
+<div class="cisym-diagram" markdown="1">
+
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{"fontSize":"20px","fontFamily":"Space Grotesk, sans-serif"},"flowchart":{"useMaxWidth":false,"nodeSpacing":35,"rankSpacing":45,"padding":12}}}%%
 flowchart TD
   subgraph PROP["Proposal"]
     S1["1. Send a session proposal via {{ c.links.session_proposal }} by {{ c.deadlines.session_proposal }}: session title, 100-word description, organizer name, email, affiliation, proposed speakers"]
     D1{"2. Approved by the program chairs?"}
-    S2["Not approved: chairs reply with reasons. You may revise or register as an attendee."]
+    S2["Not approved: chairs reply with<br/>reasons. You may revise or register as<br/>an attendee."]
   end
   subgraph SPEAK["Speakers"]
-    S3["3. Invite speakers. Give each the session name, the CMT link and the paper deadline"]
-    S4["4. Each speaker submits in CMT and selects your session. Process: CMT_SESSION_SETTING_TBD"]
-    S5["5. Collect final speaker list: name, email, talk title, order"]
+    S3["3. Invite speakers. Give each the<br/>session name, the CMT link and the<br/>paper deadline"]
+    S4["4. Each speaker submits in CMT and<br/>selects your session. Process:<br/>CMT_SESSION_SETTING_TBD"]
+    S5["5. Collect final speaker list: name,<br/>email, talk title, order"]
   end
   subgraph REG["Purdue registration"]
-    S6["6. Register: name, badge name, email, affiliation, role = Session organizer, dietary needs, accessibility needs, hotel nights"]
+    S6["6. Register: name, badge name, email,<br/>affiliation, role = Session organizer,<br/>dietary needs, accessibility needs,<br/>hotel nights"]
     S7["7. Pay ${{ c.registration.early_fee_usd }} by {{ c.registration.early_fee_last_day }}, or ${{ c.registration.late_fee_usd }} after"]
   end
   subgraph HOTEL["Hotel"]
     S8["8. Reserve room: ${{ c.hotel.rate_usd_per_night }} per night plus tax, by {{ c.hotel.cutoff_date }}"]
   end
   subgraph EVENT["Before and at the event"]
-    S9["9. Review the session chair guide and confirm the running order with the program chairs"]
+    S9["9. Review the session chair guide and<br/>confirm the running order with the<br/>program chairs"]
     S10["10. Check in and collect the printed badge"]
     S11["11. Chair the session"]
   end
@@ -51,6 +59,8 @@ flowchart TD
   class S7 pay;
   class D1 gate;
 ```
+
+</div>
 
 ## What you need and where it goes
 

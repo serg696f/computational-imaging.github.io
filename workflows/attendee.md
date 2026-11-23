@@ -12,19 +12,27 @@ For people attending without a paper or a session role.
 
 {% assign c = site.data.cisym %}
 
+<style>
+.cisym-diagram{overflow-x:auto;background:#FAFAF8;border:1px solid #DDD6C8;border-radius:6px;padding:8px}
+.cisym-diagram div.highlighter-rouge,.cisym-diagram div.highlight,.cisym-diagram pre,.cisym-diagram .mermaid,.cisym-diagram code{background:#FAFAF8 !important;box-shadow:none !important;border:0 !important}
+.cisym-diagram svg{max-width:none !important;height:auto}
+</style>
+<div class="cisym-diagram" markdown="1">
+
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{"fontSize":"20px","fontFamily":"Space Grotesk, sans-serif"},"flowchart":{"useMaxWidth":false,"nodeSpacing":35,"rankSpacing":45,"padding":12}}}%%
 flowchart TD
   subgraph SITE["Conference site"]
-    A1["1. Open the Attend page on the conference site"]
+    A1["1. Open the Attend page on the<br/>conference site"]
   end
   subgraph REG["Purdue registration"]
     A2["2. Click Register"]
-    A3["3. Enter once: name, badge name, email, affiliation, country, role = Attendee, dietary needs, accessibility needs, hotel nights"]
+    A3["3. Enter once: name, badge name,<br/>email, affiliation, country, role =<br/>Attendee, dietary needs, accessibility<br/>needs, hotel nights"]
     D1{"4. Registering on or before {{ c.registration.early_fee_last_day }}?"}
     F1["Fee ${{ c.registration.early_fee_usd }}"]
     F2["Fee ${{ c.registration.late_fee_usd }}"]
     A4["5. Pay the fee online"]
-    A5["6. Receive confirmation email and receipt. Save it."]
+    A5["6. Receive confirmation email and<br/>receipt. Save it."]
   end
   subgraph HOTEL["Hotel"]
     D2{"7. Need a hotel room?"}
@@ -32,10 +40,10 @@ flowchart TD
     H2["Skip"]
   end
   subgraph EVENT["Before and at the event"]
-    A6["9. Read the logistics email: venue, program, check-in time"]
+    A6["9. Read the logistics email: venue,<br/>program, check-in time"]
     D3{"Need to cancel?"}
-    C1["Cancel through the registration confirmation. Refund follows the cancellation policy."]
-    A7["10. Check in at the registration desk and collect the printed badge"]
+    C1["Cancel through the registration<br/>confirmation. Refund follows the<br/>cancellation policy."]
+    A7["10. Check in at the registration desk<br/>and collect the printed badge"]
   end
   A1 --> A2 --> A3 --> D1
   D1 -- Yes --> F1 --> A4
@@ -57,6 +65,8 @@ flowchart TD
   class F1,F2,A4 pay;
   class D1,D2,D3 gate;
 ```
+
+</div>
 
 ## What you need and where it goes
 
