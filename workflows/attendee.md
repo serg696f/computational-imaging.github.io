@@ -15,7 +15,7 @@ For people attending without a paper or a session role.
 <div class="cisym-diagram" markdown="1">
 
 ```mermaid
-%%{init: {"theme":"base","themeVariables":{"fontSize":"20px","fontFamily":"Arial, Helvetica, sans-serif"},"flowchart":{"useMaxWidth":false,"nodeSpacing":50,"rankSpacing":60,"padding":12}}}%%
+%%{init: {"theme":"base","themeVariables":{"fontSize":"20px","fontFamily":"Arial, Helvetica, sans-serif"},"flowchart":{"htmlLabels":false,"useMaxWidth":false,"nodeSpacing":50,"rankSpacing":60,"padding":12}}}%%
 flowchart TD
   subgraph SITE["Conference site"]
     SITE_sp[" "]

@@ -15,7 +15,7 @@ For authors of an accepted paper. Your author details are entered once in CMT. A
 <div class="cisym-diagram" markdown="1">
 
 ```mermaid
-%%{init: {"theme":"base","themeVariables":{"fontSize":"20px","fontFamily":"Arial, Helvetica, sans-serif"},"flowchart":{"useMaxWidth":false,"nodeSpacing":50,"rankSpacing":60,"padding":12}}}%%
+%%{init: {"theme":"base","themeVariables":{"fontSize":"20px","fontFamily":"Arial, Helvetica, sans-serif"},"flowchart":{"htmlLabels":false,"useMaxWidth":false,"nodeSpacing":50,"rankSpacing":60,"padding":12}}}%%
 flowchart TD
   subgraph CMT["Microsoft CMT"]
     CMT_sp[" "]
