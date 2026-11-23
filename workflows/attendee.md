@@ -24,11 +24,11 @@ For people attending without a paper or a session role.
 %%{init: {"theme":"base","themeVariables":{"fontSize":"20px","fontFamily":"Arial, Helvetica, sans-serif"},"flowchart":{"useMaxWidth":false,"nodeSpacing":50,"rankSpacing":60,"padding":12}}}%%
 flowchart TD
   subgraph SITE["Conference site"]
-    SITE_sp[" "]:::spacer
+    SITE_sp[" "]
     A1["1. Open the Attend page on the<br/>conference site"]
   end
   subgraph REG["Purdue registration"]
-    REG_sp[" "]:::spacer
+    REG_sp[" "]
     A2["2. Click Register"]
     A3["3. Enter once: name, badge name,<br/>email, affiliation, country, role =<br/>Attendee, dietary needs, accessibility<br/>needs, hotel nights"]
     D1{"4. Registering on or before {{ c.registration.early_fee_last_day }}?"}
@@ -38,18 +38,22 @@ flowchart TD
     A5["6. Receive confirmation email and<br/>receipt. Save it."]
   end
   subgraph HOTEL["Hotel"]
-    HOTEL_sp[" "]:::spacer
+    HOTEL_sp[" "]
     D2{"7. Need a hotel room?"}
     H1["8. Reserve room: ${{ c.hotel.rate_usd_per_night }} per night plus tax, nights from {{ c.hotel.check_in }}, by {{ c.hotel.cutoff_date }}"]
     H2["Skip"]
   end
   subgraph EVENT["Before and at the event"]
-    EVENT_sp[" "]:::spacer
+    EVENT_sp[" "]
     A6["9. Read the logistics email: venue,<br/>program, check-in time"]
     D3{"Need to cancel?"}
     C1["Cancel through the registration<br/>confirmation. Refund follows the<br/>cancellation policy."]
     A7["10. Check in at the registration desk<br/>and collect the printed badge"]
   end
+  SITE_sp --- A1
+  REG_sp --- A2
+  HOTEL_sp --- D2
+  EVENT_sp --- A6
   A1 --> A2 --> A3 --> D1
   D1 -- Yes --> F1 --> A4
   D1 -- No --> F2 --> A4
@@ -59,10 +63,6 @@ flowchart TD
   A6 --> D3
   D3 -- Yes --> C1
   D3 -- No --> A7
-  SITE_sp ~~~ A1
-  REG_sp ~~~ A2
-  HOTEL_sp ~~~ D2
-  EVENT_sp ~~~ A6
   style SITE fill:#FAFAF8,stroke:#DDD6C8,color:#1B3A6B
   style REG fill:#FAFAF8,stroke:#DDD6C8,color:#1B3A6B
   style HOTEL fill:#FAFAF8,stroke:#DDD6C8,color:#1B3A6B
@@ -74,6 +74,8 @@ flowchart TD
   class F1,F2,A4 pay;
   class D1,D2,D3 gate;
   classDef spacer fill:none,stroke:none,color:#FAFAF8;
+  linkStyle 0,1,2,3 stroke:none,fill:none;
+  class SITE_sp,REG_sp,HOTEL_sp,EVENT_sp spacer;
 ```
 
 </div>
