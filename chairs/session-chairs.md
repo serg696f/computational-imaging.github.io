@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Session chair guide
 nav_order: 3
 permalink: /chairs/session-chairs/

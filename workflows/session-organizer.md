@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Session organizer path
 parent: Attendee workflows
 nav_order: 3

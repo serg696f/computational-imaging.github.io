@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Attendee path
 parent: Attendee workflows
 nav_order: 1
