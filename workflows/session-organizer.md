@@ -15,31 +15,37 @@ For people who propose and chair a session. This is a recommended flow. How sess
 <style>
 .cisym-diagram{overflow-x:auto;background:#FAFAF8;border:1px solid #DDD6C8;border-radius:6px;padding:8px}
 .cisym-diagram div.highlighter-rouge,.cisym-diagram div.highlight,.cisym-diagram pre,.cisym-diagram .mermaid,.cisym-diagram code{background:#FAFAF8 !important;box-shadow:none !important;border:0 !important}
+.cisym-diagram,.cisym-diagram *{font-family:Arial,Helvetica,sans-serif !important}
 .cisym-diagram svg{max-width:none !important;height:auto}
 </style>
 <div class="cisym-diagram" markdown="1">
 
 ```mermaid
-%%{init: {"theme":"base","themeVariables":{"fontSize":"20px","fontFamily":"Space Grotesk, sans-serif"},"flowchart":{"useMaxWidth":false,"nodeSpacing":35,"rankSpacing":45,"padding":12}}}%%
+%%{init: {"theme":"base","themeVariables":{"fontSize":"20px","fontFamily":"Arial, Helvetica, sans-serif"},"flowchart":{"useMaxWidth":false,"nodeSpacing":50,"rankSpacing":60,"padding":12}}}%%
 flowchart TD
   subgraph PROP["Proposal"]
+    PROP_sp[" "]:::spacer
     S1["1. Send a session proposal via {{ c.links.session_proposal }} by {{ c.deadlines.session_proposal }}: session title, 100-word description, organizer name, email, affiliation, proposed speakers"]
     D1{"2. Approved by the program chairs?"}
     S2["Not approved: chairs reply with<br/>reasons. You may revise or register as<br/>an attendee."]
   end
   subgraph SPEAK["Speakers"]
+    SPEAK_sp[" "]:::spacer
     S3["3. Invite speakers. Give each the<br/>session name, the CMT link and the<br/>paper deadline"]
     S4["4. Each speaker submits in CMT and<br/>selects your session. Process:<br/>CMT_SESSION_SETTING_TBD"]
     S5["5. Collect final speaker list: name,<br/>email, talk title, order"]
   end
   subgraph REG["Purdue registration"]
+    REG_sp[" "]:::spacer
     S6["6. Register: name, badge name, email,<br/>affiliation, role = Session organizer,<br/>dietary needs, accessibility needs,<br/>hotel nights"]
     S7["7. Pay ${{ c.registration.early_fee_usd }} by {{ c.registration.early_fee_last_day }}, or ${{ c.registration.late_fee_usd }} after"]
   end
   subgraph HOTEL["Hotel"]
+    HOTEL_sp[" "]:::spacer
     S8["8. Reserve room: ${{ c.hotel.rate_usd_per_night }} per night plus tax, by {{ c.hotel.cutoff_date }}"]
   end
   subgraph EVENT["Before and at the event"]
+    EVENT_sp[" "]:::spacer
     S9["9. Review the session chair guide and<br/>confirm the running order with the<br/>program chairs"]
     S10["10. Check in and collect the printed badge"]
     S11["11. Chair the session"]
@@ -47,6 +53,11 @@ flowchart TD
   S1 --> D1
   D1 -- No --> S2
   D1 -- Yes --> S3 --> S4 --> S5 --> S6 --> S7 --> S8 --> S9 --> S10 --> S11
+  PROP_sp ~~~ S1
+  SPEAK_sp ~~~ S3
+  REG_sp ~~~ S6
+  HOTEL_sp ~~~ S8
+  EVENT_sp ~~~ S9
   style PROP fill:#FAFAF8,stroke:#DDD6C8,color:#1B3A6B
   style SPEAK fill:#FAFAF8,stroke:#DDD6C8,color:#1B3A6B
   style REG fill:#FAFAF8,stroke:#DDD6C8,color:#1B3A6B
@@ -58,6 +69,7 @@ flowchart TD
   class S1,S2,S3,S4,S5,S6,S8,S9,S10,S11 step;
   class S7 pay;
   class D1 gate;
+  classDef spacer fill:none,stroke:none,color:#FAFAF8;
 ```
 
 </div>

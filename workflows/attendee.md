@@ -15,17 +15,20 @@ For people attending without a paper or a session role.
 <style>
 .cisym-diagram{overflow-x:auto;background:#FAFAF8;border:1px solid #DDD6C8;border-radius:6px;padding:8px}
 .cisym-diagram div.highlighter-rouge,.cisym-diagram div.highlight,.cisym-diagram pre,.cisym-diagram .mermaid,.cisym-diagram code{background:#FAFAF8 !important;box-shadow:none !important;border:0 !important}
+.cisym-diagram,.cisym-diagram *{font-family:Arial,Helvetica,sans-serif !important}
 .cisym-diagram svg{max-width:none !important;height:auto}
 </style>
 <div class="cisym-diagram" markdown="1">
 
 ```mermaid
-%%{init: {"theme":"base","themeVariables":{"fontSize":"20px","fontFamily":"Space Grotesk, sans-serif"},"flowchart":{"useMaxWidth":false,"nodeSpacing":35,"rankSpacing":45,"padding":12}}}%%
+%%{init: {"theme":"base","themeVariables":{"fontSize":"20px","fontFamily":"Arial, Helvetica, sans-serif"},"flowchart":{"useMaxWidth":false,"nodeSpacing":50,"rankSpacing":60,"padding":12}}}%%
 flowchart TD
   subgraph SITE["Conference site"]
+    SITE_sp[" "]:::spacer
     A1["1. Open the Attend page on the<br/>conference site"]
   end
   subgraph REG["Purdue registration"]
+    REG_sp[" "]:::spacer
     A2["2. Click Register"]
     A3["3. Enter once: name, badge name,<br/>email, affiliation, country, role =<br/>Attendee, dietary needs, accessibility<br/>needs, hotel nights"]
     D1{"4. Registering on or before {{ c.registration.early_fee_last_day }}?"}
@@ -35,11 +38,13 @@ flowchart TD
     A5["6. Receive confirmation email and<br/>receipt. Save it."]
   end
   subgraph HOTEL["Hotel"]
+    HOTEL_sp[" "]:::spacer
     D2{"7. Need a hotel room?"}
     H1["8. Reserve room: ${{ c.hotel.rate_usd_per_night }} per night plus tax, nights from {{ c.hotel.check_in }}, by {{ c.hotel.cutoff_date }}"]
     H2["Skip"]
   end
   subgraph EVENT["Before and at the event"]
+    EVENT_sp[" "]:::spacer
     A6["9. Read the logistics email: venue,<br/>program, check-in time"]
     D3{"Need to cancel?"}
     C1["Cancel through the registration<br/>confirmation. Refund follows the<br/>cancellation policy."]
@@ -54,6 +59,10 @@ flowchart TD
   A6 --> D3
   D3 -- Yes --> C1
   D3 -- No --> A7
+  SITE_sp ~~~ A1
+  REG_sp ~~~ A2
+  HOTEL_sp ~~~ D2
+  EVENT_sp ~~~ A6
   style SITE fill:#FAFAF8,stroke:#DDD6C8,color:#1B3A6B
   style REG fill:#FAFAF8,stroke:#DDD6C8,color:#1B3A6B
   style HOTEL fill:#FAFAF8,stroke:#DDD6C8,color:#1B3A6B
@@ -64,6 +73,7 @@ flowchart TD
   class A1,A2,A3,A5,A6,A7,H1,H2,C1 step;
   class F1,F2,A4 pay;
   class D1,D2,D3 gate;
+  classDef spacer fill:none,stroke:none,color:#FAFAF8;
 ```
 
 </div>
