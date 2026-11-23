@@ -1,0 +1,66 @@
+# CISym 2027 shared facts. ONE source of truth for dates, fees, deadlines, links.
+# Public repo: facts only. Never put names, emails, payment records or CMT exports here.
+# Values ending in _TBD are placeholders. Replace them here only; every page reads from this file.
+# Source key: [user] stated by organizer; [contract] hotel agreement dated 2026-05-12; [form36] Purdue budget form 2026-11-19.
+
+conference:
+  name: "Computational Imaging Symposium 2027"
+  short_name: "CISym 2027"
+  start_date: "2027-02-22"      # [user]
+  end_date: "2027-02-24"        # [user]
+  venue_name: "Crowne Plaza San Francisco Airport"   # [contract]
+  venue_address: "1177 Airport Blvd, Burlingame, CA 94010"   # [contract]
+
+links:
+  conference_site: "https://computational-imaging.org/"
+  code_site: "https://code.computational-imaging.org/"
+  cmt: "https://cmt3.research.microsoft.com/CISym2027/Submission/Index"
+  hotel_page: "https://www.crowneplaza.com/hotels/gb/en/burlingame/urlca/hoteldetail"  # not yet updated for the block
+  payment: "PURDUE_PAYMENT_URL_TBD"
+  hotel_booking: "HOTEL_BOOKING_URL_TBD"
+  program: "PROGRAM_URL_TBD"
+  ieee_camera_ready: "IEEE_CAMERA_READY_URL_TBD"
+  session_proposal: "SESSION_PROPOSAL_CHANNEL_TBD"
+
+registration:
+  opens: "REGISTRATION_OPEN_DATE_TBD"   # [user] "early December 2026"
+  early_fee_usd: 690                    # [user]
+  early_fee_last_day: "2027-01-15"      # [user]
+  late_fee_usd: 950                     # [user]
+  platform: "CVENT_CONFIRM_TBD"         # [form36] sheet says "CVENT Registration"; confirm with Purdue
+  presenter_rule: "PRESENTER_REGISTRATION_RULE_TBD"   # who must register per paper: unknown
+  cancellation:
+    status: "proposed, not final"       # [Greg email] "probably reasonable"; post only once final
+    full_refund: "More than 45 days before the event"
+    half_refund: "15 to 45 days before the event"
+    no_refund: "Within 15 days of the event"
+    full_refund_deadline: "REFUND_FULL_DEADLINE_TBD"   # boundary day is ambiguous; confirm with Purdue
+    half_refund_deadline: "REFUND_HALF_DEADLINE_TBD"
+
+hotel:
+  rate_usd_per_night: 189               # [user] [contract]
+  rate_note: "plus tax; breakfast included for up to 2 adults"   # [contract]
+  tax_estimate_note: "Contract estimate: $189 + 13.64% tax = $214.79"   # [contract]
+  block_nights: ["2027-02-21", "2027-02-22", "2027-02-23"]   # [user] [contract]
+  check_in: "2027-02-21"
+  check_out: "2027-02-24"
+  cutoff_date: "2027-01-29"             # [contract] Sec 1.3 / 1.4
+  block_code: "HOTEL_BLOCK_CODE_TBD"
+  booking_method: "HOTEL_BOOKING_METHOD_TBD"   # rooming list submitted by Purdue (contract 1.4) or individual booking with a code
+
+deadlines:
+  paper_submission: "PAPER_SUBMISSION_DEADLINE_TBD"
+  decision_notification: "DECISION_DATE_TBD"
+  camera_ready: "CAMERA_READY_DEADLINE_TBD"
+  presenter_registration: "PRESENTER_REGISTRATION_DEADLINE_TBD"
+  session_proposal: "SESSION_PROPOSAL_DEADLINE_TBD"
+  badge_data_freeze: "BADGE_DATA_FREEZE_TBD"
+
+# Daily frame from the hotel contract (Sec 2.1). Confirm against the final program.
+daily_frame:
+  general_session: "8:30am-5:30pm, Plaza 1"
+  morning_break: "10:30-11:00am, Foyer"
+  lunch: "12:30-2:00pm, Bayside"
+  afternoon_break: "3:00-3:30pm, Foyer"
+  panel_reception: "5:30-7:30pm, Plaza 2"
+  days: ["2027-02-22", "2027-02-23", "2027-02-24"]
